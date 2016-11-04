@@ -1,0 +1,49 @@
+class TextGui extends JFrame{//Simple GUI for text edit
+	EditMenu;
+	FormatMenu
+	textarea;
+	// add some features to the GUI to make it work
+	main()
+}
+
+class EditMenu extends Jmenu{
+	//need actions to perform on the textarea;
+	new JmenuItem("Undo");
+	new JmenuItem("Cut");
+	new JmenuItem("Copy");
+	new JmenuItem("Paste");
+	new JmenuItem("Delete");
+}
+
+class FormatMenu extends Jmenu{
+	// four Objects to set the text characters;
+	new JmenuItem("Set Text direction");
+	new JmenuItem("Kerning");
+	new JmenuItem("Set Size");
+	new JmenuItem("Set Font");
+}
+
+class SetTextDirection extends JDialog implements ActionListener{
+	//apply this class to show the direction of typing;
+	SetTextDirection();
+	public void actionPerformed(){};
+
+}
+
+class Kerning extends JDialog implements ActionListener{
+	//apply this class to set the kerning of the characters;
+	Kerning();
+	public void actionPerformed(){}
+}
+
+class SetSize extends JDialog implements ActionListener{
+	//apply this class to set the size of characters;
+	SetSize();
+	public void actionPerformed(){}
+}
+
+class SetFont extends JDialog implements ActionListener{
+	// apply this class to set the character font;
+	SetFont();
+	public void actionPerformed(){}
+}
